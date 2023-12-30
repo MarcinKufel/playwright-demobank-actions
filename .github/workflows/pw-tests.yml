@@ -22,3 +22,9 @@ jobs:
        run: npx playwright install --with-deps
      - name: Run Playwright tests
        run: npm run test
+     - name: Archive test results
+       if: success() || failure()
+       uses: actions/upload-artifact@v3
+       with:
+         name: test-reports
+         path: '**/*.*'
