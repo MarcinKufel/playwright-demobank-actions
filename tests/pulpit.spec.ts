@@ -23,7 +23,7 @@ test.describe('pulpit tests', () => {
     const recevierId = '2';
     const transferAmount = '150';
     const transferTitle = 'pizza';
-    const expectedTransferRecevier = 'Chuck Demobankowy break';
+    const expectedTransferRecevier = 'Chuck Demobankowy';
 
     // Act
 
